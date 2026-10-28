@@ -287,7 +287,7 @@ window.addEventListener('error', function (event) {
 const tg=window.Telegram&&window.Telegram.WebApp,$=i=>document.getElementById(i);
 if(tg){try{tg.ready();tg.expand();tg.setHeaderColor('#0b0b10');tg.setBackgroundColor('#0b0b10');if(tg.disableVerticalSwipes)tg.disableVerticalSwipes()}catch(e){}}
 // Для глобального топа размести backend из NomerGame_Leaderboard_Server.py и укажи адрес API ниже.
-const API_BASE = (location.protocol==='http:'||location.protocol==='https:')?location.origin:''; // API на том же домене
+const API_BASE = 'http://127.0.0.1:8000';  // API на том же домене
 const telegramMode=!!(tg&&tg.initData);
 if($('tgStatus'))$('tgStatus').textContent=telegramMode?'подключён':'открой через бота';
 const hp=t=>{try{tg.HapticFeedback.impactOccurred(t)}catch(e){}},nt=t=>{try{tg.HapticFeedback.notificationOccurred(t)}catch(e){}};
