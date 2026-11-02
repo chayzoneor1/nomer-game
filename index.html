@@ -74,7 +74,6 @@ section.on,.card{animation:fi .35s}@keyframes fi{from{opacity:0;transform:transl
 .speedrow{display:flex;justify-content:center;gap:6px;margin:9px 0 0}.speedrow button{padding:7px 12px;border:1px solid var(--ln);border-radius:14px;color:var(--mu);font-size:12px;font-weight:700;background:#191919}.speedrow button.on{color:#101010;background:#f4f4f4;border-color:#f4f4f4}.speedrow svg{width:14px;height:14px;vertical-align:-3px;margin-right:4px}.bd .brandmark{width:29px;height:29px}.card .bd .brandmark{width:27px;height:27px}.big:active,.pill:active,nav button:active{transform:scale(.96)}
 #spin{position:relative;overflow:hidden;width:auto}
 #spin::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 32%,#ffffffbb 50%,transparent 68%);transform:translateX(-120%);animation:bs 2.1s infinite}@keyframes bs{to{transform:translateX(120%)}}
-/* Suspenseful monochrome number reveal */
 .plate.rolling{filter:contrast(1.12);transform:scale(1.025);box-shadow:0 0 42px #ffffff22,inset 0 0 30px #ffffff0c,0 16px 38px #000;}
 .plate.rolling .nm{filter:blur(.2px);}
 .nm .digit{display:inline-block;min-width:.36em;transition:filter .12s,transform .12s,opacity .12s;will-change:transform,filter}
@@ -105,7 +104,6 @@ nav button.on .navico{opacity:1;filter:drop-shadow(0 0 5px #b46cff)}
 @media(max-width:370px){main{padding-left:11px;padding-right:11px}.top{padding-left:13px;padding-right:13px}.nm{font-size:20px}.plate{padding:7px 5px}.bd{width:34px;height:34px}.rg{font-size:12px}nav{margin-left:8px;margin-right:8px;gap:2px;padding:6px}nav button{font-size:10px}}
 .rankrow{border:1px solid #2c3657;background:linear-gradient(120deg,#1b2037,#101525)}.ranknum{font-weight:900;color:#ffd66b;font-size:20px;min-width:24px}.rankscore{font-weight:900;color:#61e7c0;white-space:nowrap}.rankface{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#ff4d8d,#6c5cff);font-weight:900}.rankname{flex:1;min-width:0}.rankname small{display:block;color:var(--mu);font-size:11px}.tg-badge{color:#7bd5ff}
 
-/* Refinement pass: fixed-size operator badges (never stretch into an oval). */
 .card .bd{flex:0 0 38px!important;width:38px!important;min-width:38px!important;max-width:38px!important;height:38px!important;min-height:38px!important;max-height:38px!important;aspect-ratio:1/1;border-radius:12px;overflow:hidden;padding:0;}
 .card .bd .brandmark{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;}
 .plate .bd{flex:0 0 44px;width:44px;height:44px;overflow:hidden;border-radius:14px;padding:0}
@@ -140,7 +138,6 @@ body.reduce-shake .plate.shake{animation:none!important}
 @media(prefers-reduced-motion:reduce){.nm .reel-strip,.plate.rarity-epic .nm,.plate.rarity-legendary .nm{animation:none!important;transition:none!important}}
 
 
-/* Polished settings controls and full information dossier */
 .setting-block{margin-top:12px;padding:14px;border:1px solid var(--ln);border-radius:18px;background:linear-gradient(140deg,color-mix(in srgb,var(--cd) 94%,#777 6%),var(--cd));display:grid;gap:13px}
 .setting-row{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding-bottom:12px;border-bottom:1px solid color-mix(in srgb,var(--ln) 72%,transparent)}
 .setting-row:last-child{padding-bottom:0;border-bottom:0}
@@ -182,7 +179,6 @@ body.reduce-shake .plate.shake{animation:none!important}
 :root[data-theme="mono"] .card,:root[data-theme="mono"] .statbox{background:#101010;border-color:#454545}
 :root[data-theme="mono"] .plate{filter:grayscale(.45)}
 @media(max-width:380px){.theme-trigger-copy small{font-size:10px}.info-hero{padding:14px}.info-section{padding:12px}}
-
 
 .rank-numbers{display:grid;gap:5px;margin-top:9px;min-width:0}.rank-number{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 8px;padding:7px 9px;border-radius:10px;border:1px solid var(--ln);background:var(--cd);min-width:0}.rank-number span{font-size:11px;font-weight:800;overflow-wrap:anywhere}.rank-number b{font-size:11px;white-space:nowrap}.rank-number small{grid-column:1/-1;font-size:10px;color:var(--mu)}.rank-number.ordinary{border-color:#7778}.rank-number.unusual{border-color:#55aaff88;box-shadow:inset 2px 0 #55aaff}.rank-number.rare{border-color:#36c9a588;box-shadow:inset 2px 0 #36c9a5}.rank-number.epic{border-color:#a66bff;box-shadow:inset 2px 0 #a66bff,0 0 12px #a66bff18}.rank-number.legendary{border-color:#e8b84a;box-shadow:inset 2px 0 #e8b84a,0 0 12px #e8b84a20}.rank-empty{display:block;margin-top:8px}.rank-entry{align-items:start}.rank-entry .rankscore{white-space:nowrap}.rank-entry .rankname{min-width:0;width:100%}.rank-entry{grid-template-columns:24px 34px minmax(0,1fr) auto}@media(max-width:420px){.rank-entry{grid-template-columns:22px 30px minmax(0,1fr)}.rank-entry .rankscore{grid-column:3;justify-self:start}.rank-number{grid-template-columns:minmax(0,1fr) auto}}.confirm-head{text-align:center;padding:8px 4px 12px}.confirm-emblem{margin:0 auto 10px;width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,#e7e7e7,#888);color:#111;box-shadow:0 8px 30px #fff1}.confirm-head h2{font-size:22px;margin:8px 0}.confirm-head p{color:var(--mu);line-height:1.55;margin:8px 0}.confirm-head strong{display:inline-block;color:var(--tx);margin:8px 0}.confirm-actions{display:grid;grid-template-columns:1fr 1.3fr;gap:10px}.confirm-actions .big{margin:0;padding:15px;font-weight:800}.confirm-actions .pill{border:1px solid var(--ln);border-radius:15px;background:var(--cd);padding:14px}
 
@@ -241,7 +237,6 @@ button:active{transform:scale(.96)}button{transition:transform .12s,filter .2s}
 .reflink{font:12px/1.4 monospace;word-break:break-all;background:#0d0d11;border-radius:10px;padding:10px;margin:8px 0 10px;color:#9be8d8}
 .reflist{margin-top:10px;font-size:13px}.reflist div{display:flex;justify-content:space-between;gap:10px;padding:7px 2px;border-top:1px solid #ffffff12}.reflist span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.reflist i{font-style:normal;color:#8d8d96;flex:none}.reflist i.ok{color:#55efbd}
 :root[data-theme="light"] .refbox{background:#fff;border-color:#d5dae4}:root[data-theme="light"] .refgrid div{background:#f1f3f7}:root[data-theme="light"] .reflink{background:#eef1f6;color:#0d6b5a}:root[data-theme="light"] .refbox p b{color:#191b22}
-/* v8: переключатель, крафт, шаринг, гарантированный номер */
 .seg{display:flex;gap:4px;padding:4px;margin:12px 0 2px;border-radius:16px;background:var(--cd);border:1px solid var(--ln)}
 .seg button{flex:1;padding:11px 6px;border-radius:12px;font-size:13px;font-weight:800;color:var(--mu)}
 .seg button.on{background:var(--tx);color:var(--bg)}
@@ -277,7 +272,6 @@ button:active{transform:scale(.96)}button{transition:transform .12s,filter .2s}
 .gtitle{font-weight:850;font-size:14px;line-height:1.25}.gsub{font-size:11px;color:var(--mu);line-height:1.45;margin-top:3px}
 .gdots{display:flex;gap:7px;align-items:center}.gdots i{flex:1;height:8px;border-radius:6px;background:var(--ln)}.gdots i.p{background:color-mix(in srgb,var(--rc) 40%,var(--ln))}.gdots i.a{background:var(--rc);box-shadow:0 0 10px var(--rc)}.gdots b{font-size:12px;min-width:34px;text-align:right}
 .gbox .big{margin:0;padding:13px;font-size:14px}
-/* v8.1: барабаны и появление скрафченного номера */
 .nm .reel-cell{border-radius:4px;-webkit-mask-image:none;mask-image:none}
 .nm .reel-cell.blur{-webkit-mask-image:linear-gradient(#0000,#000 24%,#000 76%,#0000);mask-image:linear-gradient(#0000,#000 24%,#000 76%,#0000);filter:blur(1.4px) brightness(1.25)}
 .nm .reel-strip span{text-shadow:0 0 10px color-mix(in srgb,var(--gl) 60%,transparent)}
@@ -293,8 +287,6 @@ button:active{transform:scale(.96)}button{transition:transform .12s,filter .2s}
 .sparks i{position:absolute;left:50%;top:50%;width:8px;height:8px;margin:-4px;border-radius:50%;background:var(--rc,#fff);box-shadow:0 0 12px var(--rc,#fff);animation:spk .9s ease-in infinite}
 @keyframes spk{from{transform:rotate(var(--a)) translateX(58px) scale(1);opacity:1}to{transform:rotate(calc(var(--a) + 140deg)) translateX(0) scale(.2);opacity:.2}}
 .plate.rolling{overflow:hidden}
-
-/* ===== v3: повтор, гарант, страницы профиля ===== */
 .pity{margin-top:10px;text-align:center;color:var(--mu);font-size:11px;line-height:1.5}.pity b{color:#ffd66b}
 #rpl{position:fixed;inset:0;z-index:70;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;background:radial-gradient(120% 90% at 50% 30%,#1b1530,#05050a 70%);animation:rpin .35s ease-out}
 #rpl.out{opacity:0;transition:opacity .25s}@keyframes rpin{from{opacity:0;transform:scale(1.04)}}
@@ -363,12 +355,38 @@ window.addEventListener('error', function (event) {
 (function(){
 const tg=window.Telegram&&window.Telegram.WebApp,$=i=>document.getElementById(i);
 if(tg){try{tg.ready();tg.expand();tg.setHeaderColor('#0b0b10');tg.setBackgroundColor('#0b0b10');if(tg.disableVerticalSwipes)tg.disableVerticalSwipes()}catch(e){}}
-// Для глобального топа размести backend из NomerGame_Leaderboard_Server.py и укажи адрес API ниже.
-const EPOCH_BUILT='__NG_EPOCH__',EPOCH=EPOCH_BUILT.indexOf('__')===0?'2026-10-30-reset-1':EPOCH_BUILT;   // сервер подставляет свою эпоху данных
-const API_DEFAULT='https://nomergram-bot.duckdns.org';
-const API_BASE=(()=>{try{const q=new URLSearchParams(location.search).get('api');if(q)return q.replace(/\/$/,'')}catch(e){}return(location.hostname.indexOf('duckdns.org')>=0||/^(localhost|127\.)/.test(location.hostname))?location.origin:API_DEFAULT})();
+
+// ============================================================================
+//  КОНФИГУРАЦИЯ ДЛЯ GITHUB PAGES
+//  Замени значения ниже на свой реальный домен бэкенда.
+//  Пример: 'https://nomergram-api.up.railway.app'
+//  Если оставить пустым — игра работает оффлайн (прогресс только в localStorage).
+// ============================================================================
+const API_DEFAULT = '';   // <-- ВСТАВЬ СЮДА URL БЭКЕНДА, например:
+                          // const API_DEFAULT = 'https://nomergram-api.up.railway.app';
+
+// Автоматически определяем API по текущему хосту
+const API_BASE = (() => {
+  try {
+    // ?api=... в URL имеет приоритет
+    const q = new URLSearchParams(location.search).get('api');
+    if (q) return q.replace(/\/$/,'');
+  } catch(e) {}
+  // Локальная разработка — API на том же хосте
+  if (/^(localhost|127\.)/.test(location.hostname)) return location.origin;
+  // GitHub Pages — если задан API_DEFAULT, используем его; иначе оффлайн-режим
+  if (location.hostname.endsWith('github.io')) return API_DEFAULT;
+  // Свой сервер — API на том же домене
+  if (['duckdns.org','railway.app','onrender.com','fly.dev','vercel.app'].some(h => location.hostname.includes(h))) return location.origin;
+  return API_DEFAULT || location.origin;
+})();
+
+// Epoch: инвалидация локальных сохранений при крупных обновлениях.
+// Меняй вручную при несовместимых изменениях структуры прогресса.
+const EPOCH_BUILT='2026-10-30-reset-1', EPOCH=EPOCH_BUILT;
 let WIPED=false;
 try{if(localStorage.getItem('ng_epoch')!==EPOCH){const ks=Object.keys(localStorage).filter(k=>/^ng\d_/.test(k));ks.forEach(k=>localStorage.removeItem(k));WIPED=ks.length>0;localStorage.setItem('ng_epoch',EPOCH)}}catch(e){}
+
 const telegramMode=!!(tg&&tg.initData);
 if($('tgStatus'))$('tgStatus').textContent=telegramMode?'подключён':'открой через бота';
 const hp=t=>{try{tg.HapticFeedback.impactOccurred(t)}catch(e){}},nt=t=>{try{tg.HapticFeedback.notificationOccurred(t)}catch(e){}};
@@ -376,14 +394,12 @@ const TU=tg&&tg.initDataUnsafe&&tg.initDataUnsafe.user||null;
 let guestId='';
 if(!TU){try{guestId=localStorage.getItem('ng_guest_id')||'';if(!guestId){guestId='g_'+Math.random().toString(36).slice(2)+Date.now().toString(36);localStorage.setItem('ng_guest_id',guestId)}}catch(e){guestId='guest_session'}}
 const UID=TU?String(TU.id):guestId,KEY='ng2_'+UID,LEGACY_KEY='ng1_'+UID;
-// ---------- настройки баланса ----------
 const COST=10,CASE=50,FEE=0,CASE_FEE=0,START_CASH=100000,DAILY=50,ANON=.004,SHAD=.0002,ENERGY_PACK=50,ENERGY_PRICE=90000,PRICE={mx:[150000,500000,1500000,5000000,15000000],ch:40000,au:750000},REGEN_MS=300000;
 Object.defineProperty(window,"MAXE",{get:()=>100+20*S.up.mx});Object.defineProperty(window,"REGEN",{get:()=>300});
 const RAR=[['Обычный',94.8,2500,'#b8bec8'],['Необычный',4.6,18000,'#76c8ff'],['Редкий',.55,150000,'#4b8dff'],['Эпический',.05,1800000,'#b86bff'],['Легендарный',.004,25000000,'#ffc857']];
 const PITY_R=60,PITY_E=1000,CRAFT_P=[.85,.7,.55,.4];
 const R=(a,b)=>Array.from({length:b-a+1},(_,i)=>a+i);
 const CITY={495:'Москва',499:'Москва',812:'Санкт-Петербург',343:'Екатеринбург',383:'Новосибирск',423:'Владивосток',831:'Н. Новгород',843:'Казань',846:'Самара',861:'Краснодар',863:'Ростов-на-Дону',473:'Воронеж',351:'Челябинск'};
-// название, тип(m/c/t), коды, вес, множитель цены, цвет значка, буква (значки собственные, не логотипы брендов)
 const OPS=[['МТС','m',R(910,919).concat(R(980,989)),18,1,'#e0484d','М'],['Билайн','m',[903,905,906,909].concat(R(960,968)),14,1,'#e6a817','Б'],
 ['МегаФон','m',R(920,929).concat([930,931,932,933,934,936,937,938,939]),16,1,'#2fae6b','Ф'],['Теле2','m',[900,901,902,904,950,951,952,953,977,978],12,1,'#3c3c4a','T2'],
 ['Yota','m',[999,958],6,1.1,'#2d8cff','Y'],['СберМобайл','m',[997],4,1.1,'#21b36b','С'],['Т-Мобайл','m',[995],4,1.1,'#f2c200','Т'],['Ростелеком','m',[991,992,993],4,1.1,'#8a5cff','Р'],
@@ -399,7 +415,6 @@ o1:{cash:60000},o2:{cash:200000,tk:1},o3:{cash:1200000,tk:3},o4:{charm:10,cash:4
 o10:{tk:2,cash:150000},o11:{tk:5,cash:1500000},o12:{num:2,cash:100000},o13:{num:3,cash:800000},o14:{num:3,cash:500000},o15:{cash:300000}};
 const giftParts=q=>{const g=QG[q[0]]||{},p=[`+${q[5]} эн.`];if(g.cash)p.push(`+${fmt(g.cash)} ₽`);if(g.tk)p.push(`+${g.tk} билет колеса`);if(g.charm)p.push('талисман удачи');if(g.num!=null)p.push(`номер ${RAR[g.num][0].toLowerCase()}+`);return p.join(' · ')};
 const ST={crt:s=>s.crafted||0,lvl:s=>s.lv,ep:s=>s.rf[3]+s.rf[4],ops:s=>new Set(s.col.map(n=>n.op)).size,city:s=>s.col.filter(n=>n.k=='c').length,toll:s=>s.col.filter(n=>n.k=='t').length,anon:s=>s.anon,leg:s=>s.rf[4],col:s=>s.col.length,spins:s=>s.spins};
-// ---------- состояние ----------
 const fresh=()=>({user:null,en:100,cash:0,lr:Date.now(),ld:'',spins:0,sold:0,earned:0,kept:0,col:[],pend:null,rf:[0,0,0,0,0],anon:0,xp:0,lv:1,q:{},up:{mx:0,rg:0,auto:0},auto:0,charm:0,st:0,pr:0,pe:0,rev:0,crafted:0});
 let S=fresh(),busy=false,mode=0,fastSpin=false;
 let craftTier=0,craftSel=new Set(),colView='col',REFD=null,lastDrop=null,sheetBack=null;
@@ -408,7 +423,7 @@ const SHARE_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stro
  S.bestNumberValue=S.bestNumberValue||0; S.bestNumber=S.bestNumber||null;
 try{
  const stored=localStorage.getItem(KEY)||localStorage.getItem(LEGACY_KEY)||(UID.startsWith('g_')?localStorage.getItem('ng1_guest'):null);
- if(stored){const d=JSON.parse(stored);S=Object.assign(fresh(),d);S.up=Object.assign(fresh().up,d.up||{});S.rf=Array.isArray(d.rf)?d.rf:[0,0,0,0,0];S.col=Array.isArray(d.col)?d.col:[];S.q=d.q||{};S.cash=Number(d.cash)||0;S.en=Math.max(0,Math.min(100+20*(S.up.mx||0),Number(S.en)||0));S.lr=Number(S.lr)||Date.now();S.earned=Number(S.earned)||0;}
+ if(stored){const d=JSON.parse(stored);S=Object.assign(fresh(),d);S.up=Object.assign(fresh().up,d.up||{});S.rf=Array.isArray(d.rf)?d.rf:[0,0,0,0,0];S.col=Array.isArray(d.col)?d.col:[];S.q=d.q||{};S.cash=Number(d.cash)||0;S.en=Math.max(0,Math.min(100+20*(S.up.mx||0),Number(d.en)||0));S.lr=Number(S.lr)||Date.now();S.earned=Number(S.earned)||0;}
 }catch(e){console.warn('Не удалось прочитать сохранение',e)}
 let apiBusy=false;
 async function syncScore(){return;if(!API_BASE||!telegramMode||apiBusy)return;apiBusy=true;try{await fetch(API_BASE.replace(/\/$/,'')+'/api/score',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:tg.initData,displayName:S.user?.name||TU?.first_name||'Игрок',scoreValue:S.col.reduce((a,n)=>a+n.v,0)+(S.cash||0),rare:S.col.filter(n=>n.r>=3||n.tag).length,bestNumberValue:S.bestNumberValue||0,collection:(S.col||[]).slice().sort((a,b)=>(b.v||0)-(a.v||0)).slice(0,12).map(n=>({number:String((n.pre||'')+' '+(n.num||'')).trim(),value:Math.max(0,Math.min(1000000000,Number(n.v)||0)),rarity:Math.max(0,Math.min(4,Number(n.r)||0)),tag:!!n.tag})),level:S.lv,spins:S.spins})})}catch(e){}finally{apiBusy=false}}
@@ -419,7 +434,6 @@ function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&l
 function svgIcon(kind){const paths={spin:'<circle cx="12" cy="12" r="8"/><path d="M12 4v4m0 8v4M4 12h4m8 0h4M9 9l6 6m0-6-6 6"/>',cards:'<rect x="5" y="4" width="12" height="16" rx="2"/><path d="M9 8h4m-4 4h4m3-5h3v13H9"/>',quest:'<path d="m5 12 4 4L19 6"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/>',shop:'<path d="M4 9h16l-1 11H5L4 9Z"/><path d="m7 9 2-5h6l2 5M9 13v3m6-3v3"/>',rank:'<path d="M8 21h8m-4-4v4M6 4h12v5a6 6 0 0 1-12 0V4Z"/><path d="M6 7H3v2a4 4 0 0 0 4 4m11-6h3v2a4 4 0 0 1-4 4"/>'};return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[kind]||paths.cards}</svg>`}
 document.querySelectorAll('[data-icon]').forEach(e=>e.innerHTML=svgIcon(e.dataset.icon));
 const need=l=>20+5*l,luck=()=>1+.03*(S.lv-1)+(S.charm>0?.35:0),fmt=n=>n.toLocaleString('ru-RU'),today=()=>new Date().toISOString().slice(0,10);
-// Авторские абстрактные SVG-эмблемы генерируются функцией operatorIcon(); это не копии официальных логотипов.\n// ---------- генерация номеров ----------
 const A='0123456789',D='9876543210',rd=n=>Array.from({length:n},()=>A[Math.random()*10|0]).join(''),seq=t=>A.includes(t)||D.includes(t);
 function cls(s){const t=s.slice(-6),f=s.slice(-4);if(new Set(t).size==1||seq(t))return 4;if(new Set(f).size==1)return 3;
  if(f.slice(0,2)==f.slice(2)||f==[...f].reverse().join('')||seq(f))return 2;for(let i=0;i<3;i++)if(f[i]==f[i+1])return 1;return 0}
@@ -432,8 +446,7 @@ const pityTick=r=>{S.pr=r>=2?0:(S.pr||0)+1;S.pe=r>=3?0:(S.pe||0)+1};
 function pityUI(){const e=$('pity');if(!e)return;e.innerHTML='Гарант: «Редкий» через <b>'+Math.max(0,PITY_R-(S.pr||0))+'</b> · «Эпический» через <b>'+Math.max(0,PITY_E-(S.pe||0))+'</b> прокруток'}
 function gen(m0=0,ex=-1,noTag=false){const r=ex>=0?ex:pick([0,1,2,3,4],RAR.map((x,i)=>i>=m0?x[1]:0)),o=pick(OPS,OPS.map(x=>x[3])),code=o[2][Math.random()*o[2].length|0],s=sub(r),x=Math.random(),L=luck();
  const tag=noTag?'':x<SHAD*L?'Shadow':x<(SHAD+ANON)*L?'Telegram Anonymous':'',m=tag=='Shadow'?100:tag?35:1,mk=+(.7+Math.random()*.8).toFixed(2);
- return{num:`${code} ${s.slice(0,3)}-${s.slice(3,5)}-${s.slice(5)}`,pre:o[1]=='t'?'8':'+7',op:o[0],k:o[1],col:o[5],ch:o[6],reg:CITY[code]||'',r,tag,mk,v:Math.max(1,Math.round(RAR[r][2]*o[4]*m*mk))}}
-// ---------- задания ----------
+ return{num:`${code} ${s.slice(0,3)}-${s.slice(3,5)}-${s.slice(5)}`,pre:o[1]=='t'?'8':'+7',op:o[0],k:o[1],col:o[5],ch:o[6],reg:CITY[code]||'',r,tag,m,v:Math.max(1,Math.round(RAR[r][2]*o[4]*m*mk))}}
 const key=p=>p=='d'?today():p=='w'?'w'+Math.floor((Date.now()/864e5+3)/7):'o';
 function rec(q){const r=S.q[q[0]]||(S.q[q[0]]={p:0,k:'',c:0}),k=key(q[2]);if(r.k!==k){r.p=0;r.k=k;r.c=0}return r}
 const prog=q=>ST[q[3]]?Math.min(q[4],ST[q[3]](S)):rec(q).p;
@@ -442,7 +455,6 @@ function claim(id){const q=Q.find(x=>x[0]==id),r=rec(q);if(r.c||prog(q)<q[4])ret
  if(g.cash)S.cash=(S.cash||0)+g.cash;if(g.tk)S.tk=(S.tk||0)+g.tk;if(g.charm)S.charm=(S.charm||0)+g.charm;
  let n=null;if(g.num!=null){n=gen(g.num);S.col.push(n);S.rf[n.r]=(S.rf[n.r]||0)+1;if(n.v>(S.bestNumberValue||0)){S.bestNumberValue=n.v;S.bestNumber={num:n.num,pre:n.pre,op:n.op,r:n.r,v:n.v,col:n.col}}}
  save();return{en:q[5],g,n}}
-// ---------- UI ----------
 let tt;function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>e.classList.remove('on'),1800)}
 function addXp(n){S.xp+=n;while(S.xp>=need(S.lv)){S.xp-=need(S.lv);S.lv++;toast(`Новый уровень: ${S.lv}`);nt('success')}save()}
 function hud(){try{const rd=Q.some(q=>{const r=rec(q);return !r.c&&prog(q)>=q[4]});const nb=document.querySelector('nav [data-t="2"]');if(nb)nb.classList.toggle('rd',rd)}catch(e){}$('en').textContent=fmt(S.en);if($('cash'))$('cash').textContent=fmt(S.cash||0)+' ₽';
@@ -457,16 +469,14 @@ function regen(){
  if(!steps)return false;
  const before=S.en;
  S.en=S.en>=MAXE?S.en:Math.min(MAXE,Math.max(0,S.en)+steps);
- // Energy restores at 1 point per 5 minutes while away or idle (12/hour), capped at capacity.
  if(S.en>=MAXE)S.lr=now; else S.lr+=steps*REGEN_MS;
  return S.en!==before;
-} 
+}
 const money=n=>n>=1e9?(n/1e9).toFixed(1).replace('.',',')+' млрд':n>=1e6?(n/1e6<100?(n/1e6).toFixed(1).replace('.',',').replace(',0',''):Math.round(n/1e6))+' млн':fmt(n);
 function numCard(n){const r=Math.max(0,Math.min(4,(n.r|0))),ic=n.op?operatorIcon(n):'<svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>';
  return `<div class="ncard" ${n.attr||''} style="--rc:${RAR[r][3]}"><div class="mp"><span class="mi">${ic}</span><span class="mt">${esc(n.text)}</span></div><div class="nrar">● ${RAR[r][0]}</div><div class="nsub">${esc(n.sub||'\u00a0')}</div><div class="npr">${fmt(Number(n.v)||0)} ₽</div></div>`}
 function operatorIcon(n){
  const op=String(n.op||''); let mark='',bg=n.col||'#555';
- // Векторные эмблемы операторов, выполненные в узнаваемой фирменной стилистике.
  if(op.includes('МТС')) mark='<circle cx="24" cy="24" r="22" fill="#e30613"/><path d="M11 15h26v5H27v15h-6V20H11z" fill="#fff"/>';
  else if(op.includes('Билайн')) mark='<circle cx="24" cy="24" r="22" fill="#ffdf00"/><path d="M5 13h38M3 20h42M3 28h42M5 35h38" stroke="#171717" stroke-width="4.5"/>';
  else if(op.includes('МегаФон')) mark='<path d="M8 7h18a17 17 0 0 1 0 34H8z" fill="#00b956"/><path d="M15 31 22 15h4l7 16h-5l-4-9-4 9z" fill="#fff"/>';
@@ -503,7 +513,6 @@ function roll(n,done,fast=false,ui=null){
  plate.classList.remove('leg','holo','pop','rarity-rare','rarity-epic','rarity-legendary');plate.classList.add('shake','rolling','reel-active');
  plate.style.setProperty('--gl','#ffffff');
  if(main){$('tag').textContent='';$('rar').innerHTML='&nbsp;';$('val').textContent='';$('ser').textContent=''}
- // каждая цифра — барабан, который непрерывно крутится и тормозит слева направо
  const spin=cells.map(c=>{const st=c.firstElementChild;st.style.transition='none';return st.animate([{transform:'translateY(0)'},{transform:`translateY(-${10*H}em)`}],{duration:fast?150:220,iterations:Infinity,delay:-Math.random()*200})});
  const base=fast?480:1000,step=fast?70:135,slow=(n.r>=3&&!fast)?380:0;
  const iv=setInterval(()=>tickSound(330+Math.random()*250,.035,'wheel'),55);
@@ -513,7 +522,7 @@ function roll(n,done,fast=false,ui=null){
   st.animate([{transform:`translateY(-${(2+Math.random()*5|0)*H}em)`},{transform:`translateY(-${(to+.14)*H}em)`,offset:.8},{transform:`translateY(-${to*H}em)`}],{duration:fast?320:540,easing:'cubic-bezier(.2,.7,.25,1)'});
   c.classList.remove('blur');c.classList.add('locked');
   c.animate([{boxShadow:'0 0 0 0 #ffffffcc',transform:'scale(1.28)'},{boxShadow:'0 0 16px 7px #fff0',transform:'scale(1)'}],{duration:430,easing:'ease-out'});
-  if(n.r>=3&&k===N-3)plate.style.setProperty('--gl',rc);  // намёк: цвет редкости проступает перед последними цифрами
+  if(n.r>=3&&k===N-3)plate.style.setProperty('--gl',rc);
   tickSound(410+(k%5)*65,.06,'lock');hp('light');
  },base+k*step+(k>=N-2?slow*(k-(N-3)):0)));
  const finish=base+N*step+slow*2+(fast?330:520);
@@ -535,7 +544,6 @@ function askConfirm(title,details,confirmLabel,onConfirm){
  $('sheet').classList.add('on');$('confirmCancel').onclick=()=>{$('sheet').classList.remove('on')};$('confirmDo').onclick=()=>{ $('sheet').classList.remove('on'); onConfirm(); };
 }
 function cashCounter(amount){if(!readPrefs().sound)return;const ctx=unlockAudio();if(!ctx)return;const now=ctx.currentTime;const count=Math.min(14,Math.max(5,Math.floor(Math.log10(Math.max(1,amount))*2)));for(let i=0;i<count;i++){const t=now+i*.052;const f=760+(i%4)*95;audioVoice(ctx,f,t,.045,.018,'square',f*1.22);audioVoice(ctx,f*1.5,t+.012,.032,.006,'sine',f*1.25)}audioVoice(ctx,1040,now+count*.052,.13,.018,'sine',1320)}
-function sell(){if(busy||!S.pend)return;const n=S.pend;askConfirm('Продать номер?',`<b>${n.pre} ${n.num}</b><br>${n.op} · ${RAR[n.r][0]}<br><strong style="font-size:24px">+${fmt(n.v)} ₽</strong><br><small>Номер будет удалён из текущей находки. Энергию продажа не даёт.</small>`,'Подтвердить продажу',()=>{if(!S.pend)return;S.cash=(S.cash||0)+n.v;S.earned=(S.earned||0)+n.v;S.pend=null;S.sold++;ev('sell');save();idle();toast(`Продано за ${fmt(n.v)} ₽`);fl(`+${fmt(n.v)} ₽`,'#55efbd');cashCounter(n.v);hud();rend()})}
 function sellIdx(a){if(!a.length)return;const indices=[...new Set(a)].filter(i=>S.col[i]);if(!indices.length)return;const total=indices.reduce((sum,i)=>sum+(S.col[i]?.v||0),0);askConfirm('Продать номера?',`Выбрано номеров: <b>${indices.length}</b><br>Сумма продажи: <strong style="font-size:24px">${fmt(total)} ₽</strong><br><small>Выбранные номера будут удалены из коллекции. Это действие нельзя отменить.</small>`,'Продать выбранные',()=>{let e=0;indices.sort((x,y)=>y-x).forEach(i=>{e+=S.col[i].v||0;S.col.splice(i,1);S.sold++;ev('sell')});S.cash=(S.cash||0)+e;S.earned=(S.earned||0)+e;save();toast(`Продано за ${fmt(e)} ₽`);cashCounter(e);hud();rend()})}
 const cardHtml=(n,i)=>numCard({text:n.pre+' '+n.num,v:n.v,r:n.r,op:n.op,col:n.col,sub:(n.op||'')+(n.tag?' · '+n.tag:''),attr:`data-s="${i}"`});
 function rend(){
@@ -543,10 +551,7 @@ function rend(){
  $('cl').innerHTML=S.col.length?'<p class="ranknote" style="padding:0 0 10px;text-align:left">Нажми на номер: поделиться или продать</p><div class="ncards">'+S.col.map((n,i)=>cardHtml(n,i)).reverse().join('')+'</div>':'<p style="color:var(--mu);text-align:center;margin-top:40px">Пока пусто. Крути и оставляй понравившиеся номера.</p>';
  $('ql').innerHTML=[['d','Ежедневные'],['w','Недельные'],['o','Разовые']].map(([p,t])=>'<h3>'+t+'</h3>'+Q.filter(q=>q[2]==p).map(q=>{const r=rec(q),g=prog(q),rd=g>=q[4]&&!r.c;
   return`<div class="card ${r.c?'dim':''}"><div><b style="font-family:inherit">${q[1]}</b><small>${g}/${q[4]} · ${giftParts(q)}</small><div class="pr"><i style="width:${g/q[4]*100}%"></i></div></div>${r.c?'<span>Готово</span>':`<button class="sm ${rd?'g':''}" data-c="${q[0]}" ${rd?'':'disabled'}>Забрать</button>`}</div>`}).join('')).join('');
-
  shop();wheelUI();renderCraft();renderRefQuest();hud()}
-
-// ---------- события ----------
 function fl(t,c){const e=document.createElement('div');e.className='fl';e.textContent=t;e.style.color=c;document.body.appendChild(e);setTimeout(()=>e.remove(),1300)}
 function flash(c){const e=document.createElement('div');e.className='fx';e.style.background=`radial-gradient(circle at 50% 35%,${c}aa,transparent 70%)`;document.body.appendChild(e);setTimeout(()=>e.remove(),700);
  if(c=='#ffb800'){document.body.classList.add('qk');setTimeout(()=>document.body.classList.remove('qk'),500)}}
@@ -560,7 +565,7 @@ function buy(k){const u=S.up;if(k=='au'&&u.auto){S.auto=S.auto?0:1;save();rend()
 $('sp').onclick=e=>{const b=e.target.closest('[data-b]');if(b)buy(b.dataset.b)};
 
 document.querySelectorAll('nav [data-t]').forEach(b=>b.onclick=()=>{document.querySelectorAll('nav [data-t]').forEach(x=>x.classList.toggle('on',x==b));document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===('t'+b.dataset.t)));hp('light');rend();if(b.dataset.t==='3'&&API_BASE)loadLeaderboard();if(b.dataset.t==='2')refClaim().then(fetchRefData)});
-$('rankRefresh').onclick=()=>{if(API_BASE)loadLeaderboard();else toast('Общий рейтинг подключается через сервер')};
+$('rankRefresh').onclick=()=>{if(API_BASE)loadLeaderboard();else toast('Общий рейтинг недоступен: нужен бэкенд (Railway/Render)')};
 $('speedNormal').onclick=()=>{fastSpin=false;$('speedNormal').classList.add('on');$('speedFast').classList.remove('on')};$('speedFast').onclick=()=>{fastSpin=true;$('speedFast').classList.add('on');$('speedNormal').classList.remove('on')};$('spin').onclick=()=>busy?(rollSkip&&rollSkip()):spin();$('case').onclick=()=>spin(1);$('keep').onclick=keep;$('sell').onclick=sell;
 $('sc').onclick=()=>{const a=[];S.col.forEach((n,i)=>n.r<=1&&!n.tag&&a.push(i));a.length?sellIdx(a):toast('Обычных номеров нет')};
 $('cl').onclick=e=>{const b=e.target.closest('[data-s]');if(b)openNum(+b.dataset.s)};
@@ -571,7 +576,6 @@ const IC_BACK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
 function pgHead(title,back){return `<div class="pg-head">${back?`<button class="pg-back" id="pgBack" aria-label="Назад">${IC_BACK}</button>`:'<span class="pg-sp"></span>'}<b>${title}</b><button class="pg-x" id="pgX" aria-label="Закрыть">×</button></div>`}
 function pgBind(back){$('pgX').onclick=()=>{sheetBack=null;$('sheet').classList.remove('on')};sheetBack=back||null;if(back&&$('pgBack'))$('pgBack').onclick=back;const sb=$('sb');sb.classList.remove('pgin');void sb.offsetWidth;sb.classList.add('pgin')}
 function mrow(id,ic,c1,c2,t,sub){return `<button class="mrow" id="${id}"><span class="mic" style="background:linear-gradient(145deg,${c1},${c2})">${ic}</span><span class="mtx"><b>${t}</b><small>${sub}</small></span><span class="mch">${IC_CHEV}</span></button>`}
-// ---------- страница 1: профиль ----------
 function openProfile(){
  if(!S.user){$('reg').style.display='flex';return}
  const rare=S.col.filter(n=>n.r>=3||n.tag).length,total=S.col.reduce((a,n)=>a+n.v,0),next=need(S.lv),ini=esc((S.user.name||'И').slice(0,1).toUpperCase());
@@ -583,11 +587,9 @@ function openProfile(){
  <h3>Имя игрока</h3><input id="profileNick" maxlength="16" value="${esc(S.user.name||'Игрок')}" placeholder="Твой ник"><button class="big" id="saveNick" style="font-size:15px;padding:15px">Сохранить имя</button>`;
  $('sheet').classList.add('on');pgBind(null);loadRef();$('goSettings').onclick=()=>openSettings();
  $('saveNick').onclick=()=>{const v=$('profileNick').value.trim();if(v.length<2){toast('Имя должно быть не короче 2 символов');return}S.user.name=v;save();avatar();rend();toast('Имя сохранено');openProfile()}}
-// ---------- страница 2: настройки ----------
 function openSettings(){
  $('sb').innerHTML=pgHead('Настройки',openProfile)+`<p class="pg-lead">Здесь всё про игру и внешний вид приложения.</p><div class="mgroup">${mrow('goInfo','<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>','#22d3ee','#2563eb','Информация об игре','Правила, шансы, крафт, экономика, друзья')}${mrow('goUi','<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="3"/><path d="M8 21h8M12 18v3"/></svg>','#f472b6','#9333ea','Настройки интерфейса','Тема, звук прокрутки, тряска')}</div>`;
  $('sheet').classList.add('on');pgBind(openProfile);$('goInfo').onclick=()=>showInfo();$('goUi').onclick=()=>openInterface()}
-// ---------- страница 3: интерфейс ----------
 function openInterface(){
  $('sb').innerHTML=pgHead('Интерфейс',openSettings)+`<div class="setting-block">
   <div class="setting-row"><div class="setting-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 14.5 5.5 18 5l1 3.5 3 2-1.5 3.5.5 3.5-4 1.5-2 3-3.5-1.5L8 22l-1.5-3.5L3 17l1-4-1-3 3.5-1.5L8 5l4 1z"/><circle cx="12" cy="12" r="3"/></svg>Тема оформления</div><div class="theme-select-wrap"><button type="button" class="theme-select-trigger" id="themeButton" aria-expanded="false" aria-controls="themeMenu"><span class="theme-preview" id="themePreview"></span><span class="theme-trigger-copy"><b id="themeLabel">Тёмная</b><small id="themeSubLabel">Мягкий контраст для игры вечером</small></span><svg class="theme-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="theme-menu" id="themeMenu" hidden>
@@ -608,7 +610,6 @@ $('av').onclick=openProfile;
 $('sheet').onclick=e=>{if(e.target.id=='sheet'){sheetBack=null;$('sheet').classList.remove('on')}};
 if(tg&&tg.BackButton){try{tg.BackButton.onClick(()=>{if($('sheet').classList.contains('on')){if(sheetBack&&$('sb').querySelector('.pg-head'))sheetBack();else $('sheet').classList.remove('on')}else if($('reg').style.display==='flex')return;else tg.close()})}catch(e){}}
 $('go').onclick=()=>{const v=$('nick').value.trim();if(v.length<2){toast('Ник от 2 символов');return}S=fresh();S.user={name:v,id:UID,telegram:!!TU};S.en=100;S.cash=START_CASH;S.lr=Date.now();if(pendBonus){S.en+=pendBonus.en||0;S.cash+=pendBonus.cash||0;pendBonus=null}save();$('reg').style.display='none';avatar();idle();rend();nt('success');toast('Добро пожаловать! +100 энергии и '+fmt(START_CASH)+' ₽')};
-// Preferences: custom inline SVG interface only; no emoji icons.
 const PREF_KEY='nomergame-prefs-v2';
 let PREFS_CACHE={theme:'dark',sound:true,shake:true};
 function readPrefs(){try{PREFS_CACHE=Object.assign({},PREFS_CACHE,JSON.parse(localStorage.getItem(PREF_KEY)||'{}'))}catch(e){}if(!['dark','light','mono'].includes(PREFS_CACHE.theme))PREFS_CACHE.theme='dark';return Object.assign({},PREFS_CACHE)}
@@ -631,8 +632,8 @@ function showInfo(){
    <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h16v13H4zM8 7V4h8v3M8 12h8"/><path d="m14 16 2 2 4-5"/></svg><span><b>Продавать.</b> Из экрана «Игра» продажа мгновенная и без лишних вопросов; подтверждение нужно только при продаже из коллекции. Доход зачисляется только в виртуальный баланс игры.</span></div>
    <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 19V5m0 14h17M8 15l4-4 3 2 5-7"/></svg><span><b>Соревноваться.</b> Сравнивай стоимость коллекции, количество редких находок и свой рекорд. Глобальный рейтинг работает, когда подключён сервер.</span></div>
   </div></div>
-  <div class="info-section"><h3>ШАНСЫ ОБЫЧНОЙ ПРОКРУТКИ</h3><div class="info-list">${odds.map(r=>`<div><div class="odds-row"><span class="odds-dot" style="background:${r.color}"></span><div class="odds-copy"><b>${r.name}</b><small>Базовая стоимость от ${fmt(r.price)} ₽</small></div><span class="odds-pct">${String(r.chance).replace('.',',')}%</span></div><div class="odds-track"><i style="width:${r.chance}%;background:${r.color}"></i></div></div>`).join('')}</div><p>Шансы относятся к одной обычной прокрутке на базовом уровне и суммарно составляют 100%. Но есть гарант: если 60 прокруток подряд не выпал «Редкий» — следующая прокрутка даст его обязательно, а если 1000 прокруток не было «Эпического» — выпадет эпический. Чем длиннее серия неудач, тем выше шанс на редкие номера. Дорогие номера нужно добиваться — удача на старте не поможет.</p><div class="info-note"><b>Кейс:</b> выдаёт только редкие, эпические или легендарные номера. Среди результатов кейса исходные относительные доли нормализуются: примерно ${caseOdds()}. Фактические результаты могут отличаться из-за случайности и игровых бонусов.</div></div>
-  <div class="info-section"><h3>АНОНИМНЫЕ НАХОДКИ</h3><p>Редкий специальный тип коллекционного номера «Telegram Anonymous» с фирменной векторной эмблемой. Это игровая выдуманная категория: приложение не выдаёт реальные номера Telegram и не подключается к сервису анонимных номеров.</p><div class="info-note">Анонимная находка встречается редко и получает повышенный внутриигровой множитель стоимости. Она не является настоящим телефонным номером для регистрации или связи.</div><h3>ЧТО ВЛИЯЕТ НА ЦЕНУ</h3><div class="info-list">
+  <div class="info-section"><h3>ШАНСЫ ОБЫЧНОЙ ПРОКРУТКИ</h3><div class="info-list">${odds.map(r=>`<div><div class="odds-row"><span class="odds-dot" style="background:${r.color}"></span><div class="odds-copy"><b>${r.name}</b><small>Базовая стоимость от ${fmt(r.price)} ₽</small></div><span class="odds-pct">${String(r.chance).replace('.',',')}%</span></div><div class="odds-track"><i style="width:${r.chance}%;background:${r.color}"></i></div></div>`).join('')}</div><p>Шансы относятся к одной обычной прокрутке на базовом уровне и суммарно составляют 100%. Но есть гарант: если 60 прокруток подряд не выпал «Редкий» — следующая прокрутка даст его обязательно, а если 1000 прокруток не было «Эпического» — выпадет эпический. Чем длиннее серия неудач, тем выше шанс на редкие номера.</p><div class="info-note"><b>Кейс:</b> выдаёт только редкие, эпические или легендарные номера. Среди результатов кейса исходные относительные доли нормализуются: примерно ${caseOdds()}. Фактические результаты могут отличаться из-за случайности и игровых бонусов.</div></div>
+  <div class="info-section"><h3>АНОНИМНЫЕ НАХОДКИ</h3><p>Редкий специальный тип коллекционного номера «Telegram Anonymous» с фирменной векторной эмблемой. Это игровая выдуманная категория: приложение не выдаёт реальные номера Telegram и не подключается к сервису анонимных номеров.</p><div class="info-note">Анонимная находка встречается редко и получает повышенный внутриигровой множитель стоимости.</div><h3>ЧТО ВЛИЯЕТ НА ЦЕНУ</h3><div class="info-list">
    <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 21 7v10l-9 5-9-5V7z"/><path d="m8 12 3 3 5-6"/></svg><span>Редкость и запоминающийся рисунок цифр — повторы, последовательности и симметричные окончания повышают класс номера.</span></div>
    <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v10m3-7c0-2-6-2-6 0s6 2 6 4-6 2-6 0"/></svg><span>Итоговая цена учитывает базовую стоимость редкости, коэффициент категории оператора и специальные игровые метки.</span></div>
    <div class="info-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/><path d="M2 12h2m16 0h2M12 2v2m0 16v2"/></svg><span>Анонимная находка имеет базовый шанс около 0,4%, теневая — около 0,02% на старте. Они получают повышенный множитель цены; бонусы удачи могут менять шансы меток.</span></div>
@@ -645,12 +646,11 @@ function showInfo(){
   <div class="info-section"><h3>КРАФТ НОМЕРОВ</h3><p>Во вкладке «Номера» → «Крафт» объединяй одинаковые по редкости номера (5 обычных или 4 любых других) в один редкостью выше. Успех не гарантирован: шансы ${CRAFT_P.map(x=>Math.round(x*100)+'%').join(' / ')} для обычных / необычных / редких / эпических (талисман удачи добавляет +5%). При неудаче номера сгорают, а взамен ты получаешь номер прежней редкости — его цена может оказаться ниже потраченных. Номера с меткой Anonymous и Shadow в крафте не участвуют.</p></div>
   <div class="info-section"><h3>ДРУЗЬЯ</h3><p>Друг получает +50 энергии и 25 000 ₽ на старт, ты — +30 энергии и 20 000 ₽ за каждого, кто сделал 5 прокруток. Когда в игре будут 3 друга — гарантированный «Редкий» номер, а за 3, 10 и 25 друзей — дополнительные бонусы. Прогресс виден в профиле.</p></div>
   <div class="info-section"><h3>ЗВУК, ТЕМА И ТРЯСКА</h3><p>В разделе «Профиль» → «Настройки» → «Настройки интерфейса» можно выбрать тёмную, светлую или чёрно-белую тему, отключить звук механической прокрутки или выключить тряску карточки. Настройки сохраняются на устройстве.</p></div>
-  <div class="info-section"><h3>СИНХРОНИЗАЦИЯ ДАННЫХ</h3><p>Прогресс хранится на сервере и привязан к аккаунту Telegram: зайдёшь с компьютера — увидишь то же, что на телефоне. Лучше играть на одном устройстве за раз: если прогресс изменился на другом, игра подтянет свежее сохранение.</p></div>
+  <div class="info-section"><h3>СИНХРОНИЗАЦИЯ ДАННЫХ</h3><p>Прогресс хранится на сервере и привязан к аккаунту Telegram: зайдёшь с компьютера — увидишь то же, что на телефоне. Лучше играть на одном устройстве за раз: если прогресс изменился на другом, игра подтянет свежее сохранение.</p><div class="info-note">На GitHub Pages без бэкенда прогресс хранится локально на устройстве. Чтобы включить синхронизацию и рейтинг — подключи API через константу API_DEFAULT в начале скрипта.</div></div>
   <div class="info-section"><h3>ВАЖНО ЗНАТЬ</h3><p>Все номера, цены, денежные балансы и рейтинговые результаты — игровые данные. Приложение не предоставляет настоящие телефонные номера, услуги связи, реальные денежные выплаты или обмен виртуальной валюты на реальные деньги. Рейтинг всех игроков доступен только при работающем сервере.</p><div class="info-note">Совет: не продавай ценные находки автоматически — сначала проверь редкость, цену и ценность номера для своей коллекции.</div></div>
  </div>`;
  $('sheet').classList.add('on');pgBind(openSettings);
 }
-// ---------- старт ----------
 if(!S.user){$('nick').value=TU?(TU.first_name||'').slice(0,16):'';if(TU){$('welcomeText').innerHTML='Профиль Telegram подключён<br>Ник можно изменить позже';$('go').classList.add('tg-btn')} $('reg').style.display='flex'}
 avatar();regen();if(S.pend){show(S.pend)}else idle();rend();
 setInterval(()=>{if(regen()){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}hud();rend()}else hud()},30000);setInterval(()=>{if(document.visibilityState==='visible'&&!busy)cloudPull()},15000);
@@ -659,30 +659,31 @@ $('wspin').onclick=wheelSpin;initWheel();wheelUI();
 // ---------- облачная синхронизация, шаринг, рефералка ----------
 var BOT_USER='RandomNumberPhoneBot',REF=(new URLSearchParams(location.search).get('ref')||((tg&&tg.initDataUnsafe&&tg.initDataUnsafe.start_param)||'').replace('ref_','')||''),pushT=0,pendBonus=null;
 var dirty=false,pushing=false,pulling=false,deferred=null;
-function cloudPush(keep){if(!telegramMode)return;clearTimeout(pushT);if(keep){doPush(true);return}pushT=setTimeout(()=>doPush(false),700)}
-async function doPush(keep){if(!telegramMode||pushing||!dirty||!S.user)return;pushing=true;dirty=false;
+function cloudPush(keep){if(!telegramMode||!API_BASE)return;clearTimeout(pushT);if(keep){doPush(true);return}pushT=setTimeout(()=>doPush(false),700)}
+async function doPush(keep){if(!telegramMode||!API_BASE||pushing||!dirty||!S.user)return;pushing=true;dirty=false;
  try{const body=JSON.stringify({initData:tg.initData,state:S,baseRev:S.rev||0}),r=await fetch(API_BASE+'/api/state',{method:'POST',headers:{'Content-Type':'application/json'},body,keepalive:!!keep&&body.length<60000}),d=await r.json();
   if(d.conflict&&d.state)adoptRemote(d,true);else if(d.ok){S.rev=d.rev;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}else dirty=true}
  catch(e){dirty=true}finally{pushing=false;if(dirty&&!keep)pushT=setTimeout(()=>doPush(false),4000)}}
 function adoptRemote(d,conflict){if(busy){deferred=[d,conflict];return}const s=Object.assign(fresh(),d.state);s.up=Object.assign(fresh().up,s.up||{});s.rf=Array.isArray(s.rf)?s.rf:[0,0,0,0,0];s.col=Array.isArray(s.col)?s.col:[];s.q=s.q||{};s.cash=Number(s.cash)||0;
  S=s;S.rev=d.rev;dirty=false;try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
  if(S.user){$('reg').style.display='none';avatar()}regen();if(S.pend)show(S.pend);else idle();hud();rend();if(conflict)toast('Прогресс обновлён с другого устройства')}
-async function cloudPull(first){if(!telegramMode||pulling||pushing||dirty)return;pulling=true;
+async function cloudPull(first){if(!telegramMode||!API_BASE||pulling||pushing||dirty)return;pulling=true;
  try{const r=await fetch(API_BASE+'/api/state?initData='+encodeURIComponent(tg.initData)+'&ref='+encodeURIComponent(REF),{cache:'no-store'}),d=await r.json();
   if(d.exists){if(d.rev>(S.rev||0)||!S.user)adoptRemote(d,!first&&!!S.user)}else if(S.user){dirty=true;doPush(false)}
   if(d.bonus&&(d.bonus.en||d.bonus.cash)){if(!S.user)pendBonus=d.bonus;else{S.en+=d.bonus.en||0;S.cash=(S.cash||0)+(d.bonus.cash||0);toast('Бонус за приглашение: +'+(d.bonus.en||0)+' энергии'+(d.bonus.cash?' и '+fmt(d.bonus.cash)+' ₽':''));save();hud()}}}
  catch(e){}finally{pulling=false}}
 
 cloudPull(true);setTimeout(()=>refClaim().then(fetchRefData),3500);
-fetch(API_BASE+'/api/config',{cache:'no-store'}).then(r=>r.json()).then(c=>{if(c&&c.botUsername)BOT_USER=c.botUsername}).catch(()=>{});
+if(API_BASE){fetch(API_BASE+'/api/config',{cache:'no-store'}).then(r=>r.json()).then(c=>{if(c&&c.botUsername)BOT_USER=c.botUsername}).catch(()=>{});}
 
 try{if(location.search.indexOf('test=1')>=0)window.__ng={get S(){return S},set S(v){S=v},spinRar,pityTick,gen,hud,rend,get busy(){return busy},get lastDrop(){return lastDrop},shareNum,replayDrop,Q:()=>Q}}catch(e){}
 if(WIPED)setTimeout(()=>toast('Аккаунт начат заново. Дальше прогресс сохраняется'),1200);
 
-// ---------- новый рейтинг и меню шаринга ----------
 const shortMoney=n=>n>=1e9?(n/1e9).toFixed(1).replace('.0','')+' млрд':n>=1e6?(n/(n>=1e8?1e6:1e6)).toFixed(n>=1e8?0:1).replace('.0','')+' млн':fmt(n);
 let rkBusy=false;
-async function loadLeaderboard(){const meta=$('rankMeta'),box=$('rankList'),me=$('rankMe');if(rkBusy)return;rkBusy=true;meta.textContent='Обновляем рейтинг…';
+async function loadLeaderboard(){const meta=$('rankMeta'),box=$('rankList'),me=$('rankMe');
+ if(!API_BASE){meta.textContent='Рейтинг доступен только при подключённом сервере (Railway/Render/VPS)';box.innerHTML='';me.innerHTML='';return}
+ if(rkBusy)return;rkBusy=true;meta.textContent='Обновляем рейтинг…';
  try{const r=await fetch(API_BASE+'/api/leaderboard?limit=100'+(telegramMode?'&initData='+encodeURIComponent(tg.initData):''),{cache:'no-store'});if(!r.ok)throw 0;const d=await r.json(),list=d.items||[];
   const wealth=S.col.reduce((a,n)=>a+(n.v||0),0)+(S.cash||0);
   const val=u=>shortMoney(u.scoreValue||0)+' ₽',sub=u=>`Уровень ${fmt(u.level||1)} · ${fmt(u.spins||0)} прокруток`,mine=u=>String(u.id)===UID;
@@ -694,15 +695,13 @@ async function loadLeaderboard(){const meta=$('rankMeta'),box=$('rankList'),me=$
   box.innerHTML=list.slice(0,3).map((u,i)=>row(u,i,'rk-p n'+(i+1))).join('')+(list.length>3?`<div class="rk-l">${list.slice(3).map(rest).join('')}</div>`:'')
  }catch(e){meta.textContent='Не удалось получить рейтинг. Проверь сервер.'}finally{rkBusy=false}}
 async function shareNum(n){n=n||S.pend||S.col.slice().sort((a,b)=>b.v-a.v)[0];if(!n){toast('Сначала выбей номер');return}
+ if(!API_BASE){toast('Шаринг недоступен: нужен бэкенд');return}
  const num=((n.pre||'')+' '+n.num).trim(),body={initData:telegramMode?tg.initData:'',number:num,rarity:n.r,value:n.v,op:n.op||'',why:whyTxt(n)};
  const post=async p=>{const r=await fetch(API_BASE+p,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});let d={};try{d=await r.json()}catch(e){}return d};
  if(telegramMode){
-  // 1) фото-сообщение: выбираешь чат — уходит картинка с номером, ценой и @ботом
   if(tg.shareMessage&&(!tg.isVersionAtLeast||tg.isVersionAtLeast('8.0'))){try{toast('Готовим карточку…');const d=await post('/api/share');if(d.ok&&d.id){tg.shareMessage(d.id,ok=>{if(ok)toast('Отправлено')});return}}catch(e){}}
-  // 2) карточка приходит в чат с ботом — её можно переслать кому угодно
   try{const d=await post('/api/share/send');if(d.ok){toast('Карточка пришла в чат с ботом — перешли её другу');return}}catch(e){}
  }
- // 3) запасной вариант: ссылка с картинкой-превью (адрес сервера, а не страницы игры)
  const q=new URLSearchParams({num,r:n.r,v:n.v,op:n.op||'',why:whyTxt(n)}),link='https://t.me/'+BOT_USER+'?start=ref_'+UID,text='Номер за '+fmt(n.v)+' ₽. А какой выпадет тебе?\n@'+BOT_USER;
  const u=API_BASE+'/s?'+q+'&to='+encodeURIComponent(link),url='https://t.me/share/url?url='+encodeURIComponent(u)+'&text='+encodeURIComponent(text);
  if(tg&&tg.openTelegramLink)tg.openTelegramLink(url);else window.open(url,'_blank')}
@@ -718,7 +717,6 @@ function replayDrop(){const n=lastDrop;if(!n||busy)return;let o=document.getElem
   if(n.r>=3||n.tag)confetti(c);flash(c);nt('success')},fastSpin,ui)}
 $('replay').onclick=()=>replayDrop();
 
-// ---------- реферальная система (в профиле) ----------
 const REF_MSG='Залетай в НомерГрам: крути телефонные номера, крафти редкие и стань самым богатым! Дарю +50 энергии и 25 000 ₽ на старт';
 const refLink=()=>'https://t.me/'+BOT_USER+'?start=ref_'+UID;
 function refShare(){const url='https://t.me/share/url?url='+encodeURIComponent(refLink())+'&text='+encodeURIComponent(REF_MSG);if(tg&&tg.openTelegramLink)tg.openTelegramLink(url);else window.open(url,'_blank')}
@@ -727,7 +725,7 @@ const giftTxt=g=>g?[g.en?`+${g.en} эн.`:'',g.cash?`+${fmt(g.cash)} ₽`:'',g.t
 function applyRefReward(t){if(!t||!(t.en||t.cash||t.tk||(t.nums&&t.nums.length)))return false;S.en+=t.en||0;S.cash=(S.cash||0)+(t.cash||0);S.tk=(S.tk||0)+(t.tk||0);
  const gifts=(t.nums||[]).map(r=>{const n=gen(0,r,true);S.col.push(n);S.rf[n.r]=(S.rf[n.r]||0)+1;if(n.v>(S.bestNumberValue||0)){S.bestNumberValue=n.v;S.bestNumber={num:n.num,pre:n.pre,op:n.op,r:n.r,v:n.v,col:n.col}}return n});
  save();hud();rend();const tx=giftTxt(t);if(tx)toast('Награда за друзей: '+tx);nt('success');gifts.forEach(showGuarantee);fetchRefData();return true}
-async function refClaim(){if(!telegramMode)return;try{const r=await fetch(API_BASE+'/api/friends/claim',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:tg.initData})});const d=await r.json();if(d.ok)applyRefReward(d.reward)}catch(e){}}
+async function refClaim(){if(!telegramMode||!API_BASE)return;try{const r=await fetch(API_BASE+'/api/friends/claim',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({initData:tg.initData})});const d=await r.json();if(d.ok)applyRefReward(d.reward)}catch(e){}}
 function refHtml(d){const pf=d?d.perFriend:{en:30,cash:20000},fb=d?d.friendBonus:{en:50,cash:25000},nx=d&&d.nextMilestone,n=d?d.activeSpins:3;
  return guaranteeHtml(d,false)+`<div class="refgrid"><div><small>Приглашено</small><b>${d?d.count:0}</b></div><div><small>Активных</small><b>${d?d.active:0}</b></div></div>
  <p>Друг получает <b>${giftTxt(fb)}</b> на старт. Ты — <b>${giftTxt(pf)}</b> за каждого, кто сделал ${n} прокрутки.${nx?` Бонус за ${nx} активных друзей: <b>${giftTxt(d.milestones[nx])}</b>.`:''}</p>
@@ -735,11 +733,9 @@ function refHtml(d){const pf=d?d.perFriend:{en:30,cash:20000},fb=d?d.friendBonus
  <div class="row2"><button class="pill" id="refCopy">Скопировать</button><button class="big" id="refShare" style="margin:0;flex:2">Поделиться</button></div>
  ${d&&d.friends.length?`<div class="reflist">${d.friends.map(f=>`<div><span>${esc(f.name)}</span><i class="${f.active?'ok':''}">${f.active?'играет':'ещё не играл'}</i></div>`).join('')}</div>`:''}`}
 async function loadRef(){const box=$('refbox');if(!box)return;let d=null;
- if(telegramMode){try{await refClaim();const r=await fetch(API_BASE+'/api/friends?initData='+encodeURIComponent(tg.initData));if(r.ok){d=await r.json();REFD=d;renderRefQuest()}}catch(e){}}
+ if(telegramMode&&API_BASE){try{await refClaim();const r=await fetch(API_BASE+'/api/friends?initData='+encodeURIComponent(tg.initData));if(r.ok){d=await r.json();REFD=d;renderRefQuest()}}catch(e){}}
  box.innerHTML=refHtml(d);$('refShare').onclick=refShare;$('refCopy').onclick=refCopy}
-// ---------- мгновенная продажа в «Игре» (подтверждение — только в коллекции) ----------
 function sell(){if(busy||!S.pend)return;const n=S.pend;S.cash=(S.cash||0)+n.v;S.earned=(S.earned||0)+n.v;S.pend=null;S.sold++;ev('sell');save();idle();toast(`Продано за ${fmt(n.v)} ₽`);fl(`+${fmt(n.v)} ₽`,'#55efbd');cashCounter(n.v);hud();rend()}
-// ---------- почему номер столько стоит ----------
 function whyList(n){const d=String(n.num).replace(/\D/g,''),s=d.slice(-7),t6=s.slice(1),f=s.slice(3),out=[],rev=x=>[...x].reverse().join('');
  if(n.tag=='Shadow')out.push(['Теневой номер — крайне редкий','×100']);else if(n.tag)out.push(['Анонимный номер Telegram','×35']);
  if(new Set(t6).size==1)out.push(['Шесть одинаковых цифр в конце']);else if(seq(t6))out.push(['Лестница из шести цифр в конце']);
@@ -751,7 +747,7 @@ function whyList(n){const d=String(n.num).replace(/\D/g,''),s=d.slice(-7),t6=s.s
  const sev=[...s].filter(c=>c=='7').length;if(sev>=3)out.push([`Счастливые семёрки · ${sev}`]);
  const o=OPS.find(x=>x[0]==n.op);if(o&&o[4]>1)out.push([n.k=='t'?'Бесплатный номер 8-800':n.k=='c'?'Городской код'+(n.reg?': '+n.reg:''):'Премиум-оператор '+n.op,'×'+o[4]]);
  if(!out.length||(n.r==0&&out.length==0))out.push(['Случайная комбинация без красивых повторов']);
- if(n.mk&&Math.abs(n.mk-1)>=.05)out.push([n.mk>1?'Рынок: спрос выше':'Рынок: спрос ниже','×'+String(n.mk).replace('.',',')]);out.push([`База: ${RAR[n.r][0]}`,fmt(RAR[n.r][2])+' ₽']);return out}
+ if(n.m&&Math.abs(n.m-1)>=.05)out.push([n.m>1?'Рынок: спрос выше':'Рынок: спрос ниже','×'+String(n.m).replace('.',',')]);out.push([`База: ${RAR[n.r][0]}`,fmt(RAR[n.r][2])+' ₽']);return out}
 const whyTxt=n=>whyList(n).filter(x=>x[0].indexOf('База')<0&&x[0].indexOf('Рынок')<0).slice(0,2).map(x=>x[0]).join(' · ')||RAR[n.r][0];
 function renderWhy(n){let w=$('why');if(!w){w=document.createElement('div');w.id='why';w.className='wy';$('val').insertAdjacentElement('afterend',w)}
  w.innerHTML=n?whyList(n).map((x,i)=>`<i style="animation-delay:${.15+i*.09}s">${esc(x[0])}${x[1]?`<b>${x[1]}</b>`:''}</i>`).join(''):''}
@@ -759,10 +755,8 @@ const _show=show,_idle=idle;
 show=function(n){_show(n);renderWhy(n);const v=$('val'),t0=performance.now(),D=650;v.classList.remove('vpop');void v.offsetWidth;v.classList.add('vpop');
  (function step(t){const k=Math.min(1,(t-t0)/D),e=1-Math.pow(1-k,3);v.textContent=fmt(Math.round(n.v*e))+' ₽';if(k<1)requestAnimationFrame(step)})(t0)};
 idle=function(){_idle();renderWhy(null)};
-// горячие клавиши на ПК: Пробел — крутить, S — продать, K — оставить
 addEventListener('keydown',e=>{if(/INPUT|TEXTAREA/.test((e.target||{}).tagName))return;const m={' ':'spin',s:'sell',ы:'sell',k:'keep',л:'keep'}[e.key.toLowerCase()];if(m&&!$(m).disabled){e.preventDefault();$(m).click()}});
 
-// ---------- подарок дня (колокольчик): серия до 7 дней, на 3-й и 7-й день гарант номера ----------
 $('bell').onclick=()=>{const y=new Date(Date.now()-864e5).toISOString().slice(0,10);
  if(S.ld===today()){toast(`Серия входов: ${S.st} дн. Подарок уже получен`);return}
  const st=S.ld===y?Math.min(S.st+1,7):1,en=[10,15,20,25,30,40,50][st-1],g=(st==3||st==7)?gen(st==7?3:2):null;
@@ -770,7 +764,6 @@ $('bell').onclick=()=>{const y=new Date(Date.now()-864e5).toISOString().slice(0,
  d.innerHTML=`<div><small style="opacity:.6;letter-spacing:.15em">СЕРИЯ ${st} ДНЕЙ</small><h2>Подарок дня</h2><div class="big">+${en} ⚡</div>${g?`<div style="color:${RAR[g.r][3]};font-weight:700">+ гарант: ${RAR[g.r][0]} номер</div>`:`<small style="opacity:.6">На 3-й и 7-й день — гарантированный номер</small>`}<div class="days">${[1,2,3,4,5,6,7].map(i=>`<i class="${i<=st?'d':''}">${i<=st?'✓':i}</i>`).join('')}</div><button>Забрать</button></div>`;
  document.body.appendChild(d);nt('success');confetti(g?RAR[g.r][3]:'#ffc857');
  d.querySelector('button').onclick=()=>{d.remove();S.st=st;S.ld=today();S.en+=en;if(g){S.col.push(g);S.rf[g.r]=(S.rf[g.r]||0)+1;if(g.v>(S.bestNumberValue||0)){S.bestNumberValue=g.v;S.bestNumber=g}}save();hud();rend();toast(`+${en} энергии${g?' и номер '+g.pre+' '+g.num:''}`)}};
-// ---------- v8: крафт номеров ----------
 const whyChips=n=>whyList(n).map((x,i)=>`<i style="animation-delay:${.15+i*.09}s">${esc(x[0])}${x[1]?`<b>${x[1]}</b>`:''}</i>`).join('');
 const numTile=(n,attr)=>numCard({text:n.pre+' '+n.num,v:n.v,r:n.r,op:n.op,col:n.col,sub:(n.op||'')+(n.reg?' · '+n.reg:'')+(n.tag?' · '+n.tag:''),attr:attr||''});
 function renderCraft(){
@@ -821,7 +814,6 @@ $('craftView').onclick=e=>{
  if(e.target.closest('#craftAuto')){const need=CRAFT[craftTier].need;craftSel=new Set(S.col.filter(n=>n.r===craftTier&&!n.tag).sort((a,b)=>a.v-b.v).slice(0,need));hp('light');renderCraft();return}
  if(e.target.closest('#craftGo'))doCraft()};
 
-// ---------- v8: гарантированный номер за друзей ----------
 function guaranteeHtml(d,btn){
  const g=(d&&d.guarantee)||{need:3,rarity:3,claimed:false},rc=RAR[g.rarity][3],act=d?d.active:0,a=Math.min(act,g.need),reg=d?Math.min(d.count,g.need):0,done=!!g.claimed,ready=!done&&act>=g.need;
  const dots=Array.from({length:g.need},(_,i)=>`<i class="${i<a?'a':i<reg?'p':''}"></i>`).join('');
@@ -830,7 +822,7 @@ function guaranteeHtml(d,btn){
  const sub=done?'Он уже лежит в твоей коллекции':`Пригласи ${g.need} друзей. Друг засчитывается, когда сделает ${d?d.activeSpins:3} прокрутки`;
  return `<div class="gbox${done?' done':''}" style="--rc:${rc}"><div class="ghead"><div class="gplate">${done?okI:lock}<span>+7 9•• •••-••-••</span></div><div><div class="gtitle">${title}</div><div class="gsub">${sub}</div></div></div>${done?'':`<div class="gdots">${dots}<b>${a}/${g.need}</b></div>${d&&d.count>a?`<div class="gsub" style="margin-top:-4px">Зарегистрировались: ${d.count} · засчитано: ${a}</div>`:''}`}${ready?'<button class="big" data-refclaim="1">Забрать номер</button>':btn&&!done?'<button class="big" data-refshare="1">Пригласить друга</button>':''}</div>`}
 function renderRefQuest(){const b=$('refQuest');if(b)b.innerHTML=guaranteeHtml(REFD,true)}
-async function fetchRefData(){if(!telegramMode)return;try{const r=await fetch(API_BASE+'/api/friends?initData='+encodeURIComponent(tg.initData));if(r.ok){REFD=await r.json();renderRefQuest()}}catch(e){}}
+async function fetchRefData(){if(!telegramMode||!API_BASE)return;try{const r=await fetch(API_BASE+'/api/friends?initData='+encodeURIComponent(tg.initData));if(r.ok){REFD=await r.json();renderRefQuest()}}catch(e){}}
 $('refQuest').onclick=e=>{if(e.target.closest('[data-refshare]'))refShare();else if(e.target.closest('[data-refclaim]'))refClaim().then(fetchRefData)};
 function showGuarantee(n){const c=RAR[n.r][3],d=document.createElement('div');d.className='gift';
  d.innerHTML=`<div><small style="opacity:.6;letter-spacing:.15em">ЗА 3 ДРУЗЕЙ</small><h2>Гарантированный номер!</h2><div style="max-width:210px;margin:12px auto">${numTile(n)}</div><button>Забрать</button></div>`;
